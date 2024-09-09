@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO)
 
 @router.message(CommandStart())
 async def start(message: Message):
-  await message.answer("Привет " + message.from_user.first_name + "! Это бот для повторения тригонометрических формул.\n \n Пожалуйста, перед использованием данного бота, ознакомьтесь с правильным написанием всех формул с помощью команды /help. Вы также можете выбрать количество вопросов в диктанте", reply_markup=kb.main)
+  await message.answer("Привет " + message.from_user.first_name + "! Это бот для повторения тригонометрических формул.\n \n Пожалуйста, перед использованием данного бота, ознакомьтесь с правильным написанием всех формул с помощью команды /help.", reply_markup=kb.main)
 
 @router.message(Command("help"))
 async def help(message: Message):
