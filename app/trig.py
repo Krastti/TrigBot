@@ -51,4 +51,3 @@ formulas = [
   {"question": "cos(2x)", "answer": "2cos^2(x)-1"},
   {"question": "cos(2x)", "answer": "1-2sin^2(x)"},
 ]
-
